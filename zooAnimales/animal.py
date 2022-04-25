@@ -42,10 +42,10 @@ class Animal: # Clase.
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
-        return f"Mamiferos : {Mamifero.cantidadMamiferos()}\nAves : {Ave.cantidadAves}\nReptiles : {Reptil.cantidadReptiles}\nPeces : {Pez.cantidadPeces}\nAnfibios : {Anfibio.cantidadAnfibios}"
+        return f"Mamiferos : {len(Mamifero._listado)}\nAves : {len(Ave._listado)}\nReptiles : {len(Reptil._listado)}\nPeces : {len(Pez._listado)}\nAnfibios : {len(Anfibio._listado)}"
     
     def toString(self):
         if (self._zona):
-            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()} , la zona en la que me ubico es {self.getZona()}, en el {self.getZoo()}"
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero} , la zona en la que me ubico es {self._zona._nombre}, en el {self._zona._nombre}"
         else:
-            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
