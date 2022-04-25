@@ -2,12 +2,12 @@ class Animal: # Clase.
     _totalAnimales = 0
 
     # Atributos.
-    def __init__(self, nombre, edad, habitat, genero, zona = None):
+    def __init__(self, nombre, edad, habitat, genero):
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
-        self._zona = zona
+        self._zona = None
         Animal._totalAnimales += 1
 
     # Getters and Setters.
