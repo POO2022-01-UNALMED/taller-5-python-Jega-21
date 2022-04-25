@@ -1,5 +1,3 @@
-from re import M
-from readline import append_history_file
 from zooAnimales.animal import Animal
 
 class Mamifero: # Clase.

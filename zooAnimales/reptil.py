@@ -1,4 +1,3 @@
-from turtle import color
 from zooAnimales.animal import Animal
 
 class Reptil(Animal): # Clase.
